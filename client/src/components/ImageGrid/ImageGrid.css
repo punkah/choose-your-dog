@@ -1,0 +1,14 @@
+.imageGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    object-fit: cover;
+    width: 250px;
+    height: 200px;    
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid rgba(0,0,0,0.25);
+}
+

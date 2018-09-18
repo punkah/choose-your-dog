@@ -1,0 +1,15 @@
+.header {
+    background-color:#9BC1C1;
+    height: 160px;
+    font-size: 70px;
+    margin-top: 20px;
+    color: black;
+    text-align: left;
+    overflow: hidden;
+}
+
+.icon {
+    width:120px;
+    padding: 20px 50px;
+    float: left;
+}
