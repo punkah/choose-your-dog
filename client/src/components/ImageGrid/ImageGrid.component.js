@@ -9,7 +9,7 @@ class ImageGrid extends Component {
     return (
       <div className="imageGrid">
         {this.props.images.map((image, i) => (
-          <img src={image} className="image" alt="dog picture" key={i} />
+          <img src={image} className="image" alt="dog" key={i} />
         ))}
       </div>
     );
