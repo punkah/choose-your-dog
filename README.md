@@ -1,7 +1,9 @@
 Prerequisites:
-docker
-terraform
-kubectl
+
+- docker
+- terraform
+- kubectl
+- google cloud sdk
 
 Deployment steps:
 
@@ -14,6 +16,10 @@ Deployment steps:
    For Google Cloud Platform the image name should be in this format:
 
    \<region>/\<container registry name>/\<image name>:\<image tag>
+
+   Login to GCP:
+
+   > gcloud auth login
 
 2. Push them to the container registry
 
@@ -28,11 +34,11 @@ Deployment steps:
 4. If there is no infrastructure set up yet in GCP run the following:
 
    > gcloud init
-   
+
    This will initialize the connection to GCP
 
    > terraform init
-   
+
    This wil initialize terraform
 
    Create a service account in GCP, download the JSON and save it to the ./terraform folder under account.json.

@@ -1,7 +1,7 @@
 resource "google_container_cluster" "dog-cluster" {
     name = "dog-cluster"
-    zone = "europe-west1-b"
-    initial_node_count = 2
+    location = "europe-west1-b"
+    initial_node_count = 1
     node_config {
         oauth_scopes = [
             "https://www.googleapis.com/auth/compute",
