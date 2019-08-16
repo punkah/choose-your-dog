@@ -13,6 +13,12 @@ spec:
   - name: "5000"
     port: 5000
     targetPort: 5000
+    env: 
+    - name: MONGO
+      valueFrom:
+        secretKeyRef:
+          name: mongo
+          key: mongo
   selector:
     io.kompose.service: server
 status:

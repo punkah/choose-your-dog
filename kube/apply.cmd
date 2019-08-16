@@ -1,0 +1,1 @@
+kubectl apply -f ./secret.yaml -f ./client-deployment.yaml -f ./client-service.yaml -f ./server-deployment.yaml -f ./server-service.yaml
